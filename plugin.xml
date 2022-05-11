@@ -76,5 +76,17 @@
     <framework src="CoreVideo.framework" />
     <framework src="QuartzCore.framework"/>
   </platform>
+  
+  <platform name="windows">
+      <config-file target="package.appxmanifest" parent="/Package/Capabilities">
+          <DeviceCapability Name="webcam" />
+      </config-file>
+      <js-module src="www/CameraPopoverHandle.js" name="CameraPopoverHandle">
+          <clobbers target="CameraPopoverHandle" />
+      </js-module>
+      <js-module src="www/CameraPreview.js" name="CameraProxy">
+          <runs />
+      </js-module>
+  </platform>
 
 </plugin>
