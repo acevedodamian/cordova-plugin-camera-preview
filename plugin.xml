@@ -85,7 +85,7 @@
             </feature>
         </config-file>
 
-        <js-module src="www/CameraPreview.js" name="CameraProxy">
+        <js-module src="src/www/CameraPreview.js" name="CameraProxy">
             <runs />
         </js-module>
     </platform>
@@ -94,10 +94,10 @@
       <config-file target="package.appxmanifest" parent="/Package/Capabilities">
           <DeviceCapability Name="webcam" />
       </config-file>
-      <js-module src="www/CameraPopoverHandle.js" name="CameraPopoverHandle">
+      <js-module src="src/windows/CameraPopoverHandle.js" name="CameraPopoverHandle">
           <clobbers target="CameraPopoverHandle" />
       </js-module>
-      <js-module src="www/CameraPreview.js" name="CameraProxy">
+      <js-module src="src/windows/CameraPreview.js" name="CameraProxy">
           <runs />
       </js-module>
   </platform>
