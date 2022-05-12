@@ -77,6 +77,19 @@
     <framework src="QuartzCore.framework"/>
   </platform>
   
+  <!-- browser -->
+    <platform name="browser">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Camera">
+                <param name="browser-package" value="Camera" />
+            </feature>
+        </config-file>
+
+        <js-module src="www/CameraPreview.js" name="CameraProxy">
+            <runs />
+        </js-module>
+    </platform>
+  
   <platform name="windows">
       <config-file target="package.appxmanifest" parent="/Package/Capabilities">
           <DeviceCapability Name="webcam" />
