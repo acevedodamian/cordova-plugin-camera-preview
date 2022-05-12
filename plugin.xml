@@ -9,7 +9,7 @@
   <repo>https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git</repo>
   <issue>https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview/issues</issue>
 
-  <js-module src="www/CameraPreview.js" name="CameraPreview">
+  <js-module src="src/www/CameraPreview.js" name="CameraPreview">
     <clobbers target="CameraPreview" />
   </js-module>
 
